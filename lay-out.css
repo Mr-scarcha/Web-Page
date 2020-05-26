@@ -1,0 +1,209 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+nav{
+    display: flex;
+    width: 70px;
+    height: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+ul{
+    margin-right: 38px;
+}
+/** Class**/
+
+/** Section to Index **/
+.container-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+}
+.introduce{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.links-main{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.home, .cv, .portfolio, .linkedin, .github, .contacto{
+    width: 50px;
+    height: 50px;
+}
+
+/** **/
+.nav-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.other-side{
+    width: 60px;
+    height: 100%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    position: fixed;
+}
+.other-nav{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: fixed;
+}
+.part-two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+}
+/** Section to CV**/
+.content, .content-2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70px 250px 1fr;
+    grid-template-rows: 1fr;
+}
+.information{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+.about, .education, .experience, .certification, .skills, .lenguages, .tools, .one-more{
+    width: 95%;
+    align-self: center;
+}
+.edu-first, .edu-second, .edu-third, .ex-first, .ex-second, .cer-first, .bar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.right{
+    margin-left: 19px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+.left{
+    width: 25%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.divider{
+    border: 2px solid;
+}
+.ski-left, .ski-right{
+    margin: 0px;
+    width: 100%;
+}
+progress{
+    width: 80%;
+    height: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(238, 56, 56);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+/** Section to Portfolio**/
+.information-2{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 1fr 1fr 1fr;
+}
+h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.container-1{
+    border: black solid;
+    width: auto;
+    height: 70%;
+    grid-column: 1/2;
+    grid-row: 2/3 ;
+}
+.container-2{
+    border: black solid;
+    width: auto;
+    height: 70%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.container-3{
+    border: black solid;
+    width: 99%;
+    height: 70%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.container-4{
+    width: 100%;
+    height: 50%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.container-5{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.right-port{
+    width: 95%;
+}
+.left-port{
+    width: 100%;
+    height: 255px;
+}
+/** Section to Contact**/
+form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.contact{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.follow{
+    height: 80%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.survey{
+    height: 74%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
