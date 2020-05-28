@@ -9,35 +9,37 @@
 </head>
 <body>
     <div class="contact"> 
-        <nav class="other-nav">
-            <ul class="other-side">
-                <li class="li-main">
-                    <a href="Index.html"><img class="home" src="/Image/SVG/Home.svg" alt="Home"></a>
-                </li>
-                <li class="li-main">
-                    <a href="cv.html"> <img class="cv" src="/Image/SVG/cv.png" alt="CV"> </a>
-                </li>
-                <li class="li-main">
-                    <a href="portfolio.html"> <img class="portfolio" src="/Image/SVG/portfolio.png" alt="Portfolio"> </a>
-                </li>
-                <li class="li-main">
-                    <a href="https://www.linkedin.com/in/juan-carlos-rodr%C3%ADguez-mendoza-31ab7a186" target="_blank"><img class="linkedin" src="/Image/SVG/linkedin.png" alt="LinkedIn"></a>
-                </li>
-                <li class="li-main">
-                    <a href="https://github.com/Mr-scarcha" target="_blank"><img class="github" src="/Image/SVG/github.png" alt="Github"></a>
-                </li>
-                <li class="li-main">
-                    <a href="contacto.html"><img class="contacto" src=" /Image/SVG/contacto.png" alt="Contacto"></a>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Index.html"><img class="home" src="/Image/SVG/Home.svg" alt="Home"></a>
+                    </li>
+                    <li class="li-main">
+                        <a href="cv.html"> <img class="cv" src="/Image/SVG/cv.png" alt="CV"> </a>
+                    </li>
+                    <li class="li-main">
+                        <a href="portfolio.html"> <img class="portfolio" src="/Image/SVG/portfolio.png" alt="Portfolio"> </a>
+                    </li>
+                    <li class="li-main">
+                        <a href="https://www.linkedin.com/in/juan-carlos-rodr%C3%ADguez-mendoza-31ab7a186" target="_blank"><img class="linkedin" src="/Image/SVG/linkedin.png" alt="LinkedIn"></a>
+                    </li>
+                    <li class="li-main">
+                        <a href="https://github.com/Mr-scarcha" target="_blank"><img class="github" src="/Image/SVG/github.png" alt="Github"></a>
+                    </li>
+                    <li class="li-main">
+                        <a href="contacto.html"><img class="contacto" src=" /Image/SVG/contacto.png" alt="Contacto"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="survey">
             <h2>CONTACTO</h2>
             <form action="mailto:juanc0128pyoi@gmail.com" enctype="text/plain" method="POST">
                 <label for="yourName">Nombre:</label>
-                <input type="text" name="yourName"><br>
+                <input type="text" name="yourName" required><br>
                 <label for="yourEmail">E-mail:</label>
-                <input type="email" name="yourEmail" id=""><br>
+                <input type="email" name="yourEmail" id="" required><br>
                 <label for="yourMessage">Mensaje:</label><br>
                 <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br>
                 <input type="submit" value="Enviar">

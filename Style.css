@@ -33,7 +33,7 @@ h3{
 }
 h4{
     font-family: 'Roboto';
-    font-size: 1.5em;
+    font-size: 1.3em;
 
 }
 a{
@@ -52,16 +52,22 @@ p{
 }
 ul{
     list-style-type: none;
-    padding: 0px;
-    width: 70%;
 }
 li{
     list-style: none;
     margin-top: 40px;
+    font-family: 'Roboto';
+    font-size: 16px;
 }
 label{
     font-family: 'Roboto';
     font-size: 20px;
+}
+input{
+    border: none;
+}
+textarea{
+    border: none;
 }
 /** Class **/
 .h2-left{
