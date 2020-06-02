@@ -44,9 +44,10 @@ li{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .home, .cv, .portfolio, .linkedin, .github, .contacto{
     width: 40px;
@@ -87,6 +88,7 @@ li{
     grid-column: 3/4;
     grid-row: 1/2;
     display: flex;
+    justify-self: center;
     flex-direction: column;
 }
 .about, .education, .experience, .certification, .skills, .lenguages, .tools, .one-more{
@@ -109,7 +111,23 @@ li{
     margin-bottom: 20px;
 }
 .divider{
+    width: 0px;
     border: 2px solid;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.divider::after{
+    content:"";
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #cc2121;
+    margin-top: 15px;
+    position: absolute;
 }
 .ski-left, .ski-right{
     margin: 0px;
@@ -204,6 +222,7 @@ h2{
 /** Section to Contact**/
 form{
     width: 70%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -222,9 +241,10 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 95%;
 }
 .survey{
-    height: 94%;
+    height: 100%;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
@@ -232,3 +252,68 @@ form{
     justify-content: center;
     align-items: center;
 }
+@media screen and  (max-width: 767px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        min-height: 100vh;
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        width: 60px;
+        height: 100%;
+    }
+    h1{
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 15px;
+        width: 90%;
+    }
+    a{
+        font-size: 15px;
+    }
+    /** Class 
+        Home**/
+    .container-main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: center;
+        overflow: hidden;
+    }
+    .introduce{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    /** Elements-NAV**/
+    .home, .cv, .portfolio,.linkedin, .github, .contacto{
+        width: 35px;
+        height: 35px;
+    }
+    .h-nav{
+        width: 10%;
+    }
+    .nav-two{
+        width: 20%;
+    }
+    /** CV **/
+    .content{
+     height: 100%;   
+     display: grid;
+     grid-template-columns: 60px 1fr 4fr;
+     grid-row: 100%;
+    }
+    .information{
+        width: 90%;
+    }
+} 

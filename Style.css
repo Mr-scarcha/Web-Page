@@ -66,8 +66,9 @@ label{
 input{
     border: none;
     font-size: 1em;
-    color: #da4c4c;
+    color: #f5973d;
     font-weight: bold;
+    margin-top: 2px;
 }
 textarea{
     font-size: 1em;
@@ -78,7 +79,7 @@ textarea{
 .button{
     width: 30%;
     height: 8%;
-    background: #b5f59b;
+    background-color: #6a5d4d;
     border: 1px solid rgb(0, 0, 0);
 }
 .h2-left{
@@ -112,8 +113,8 @@ textarea{
     margin-top: 10px;
 }
 .twitter, .instagram, .spotify, .email{
-    width: 80px;
-    height: 80px;   
+    width: 90px;
+    height: 90px;   
 }
 /** Scrollbar Portfolio **/
 .container-1::-webkit-scrollbar{
