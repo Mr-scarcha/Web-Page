@@ -6,23 +6,25 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 }
 body{
-    background-color: #9EC3E4;
+    background-color: #dae1e7;
     /** Color para el background del Nav es #79AAD6 **/
 }
 header{
-    background-color: #79AAD6;
+    background-color: #6bc5d2;
 }
 h1{
     font-family: 'Anton';
     font-size: 70px;
     letter-spacing: 5px;
     text-align: center;
+    color: #0f4c81;
 }
 h2{
     font-family: 'Anton';
     font-size: 40px;
     letter-spacing: 3px;
     text-align: center;
+    color: #ee7e42;
 }
 h3{
     font-family: 'Cutive Mono';
@@ -39,7 +41,7 @@ h4{
 a{
     font-family: 'Anton';
     font-size: 22px;
-    color: black;
+    color: #312727;
     text-decoration: none;
     letter-spacing: 0px;
 }
@@ -103,7 +105,7 @@ textarea{
     justify-content: flex-start;
 }
 .nav-two{
-    background-color: #79AAD6
+    background-color: #6bc5d2
 }
 .profile{
     width: 230px;
