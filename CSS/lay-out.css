@@ -343,10 +343,10 @@ form{
     }
     /** CV **/
     .content, .content-2{
-     min-height: 100%;   
-     display: grid;
-     grid-template-columns: 60px 1fr;
-     grid-row: 100%;
+    min-height: 100%;   
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-row: 100%;
     }
     .information{
         width: 90%;
