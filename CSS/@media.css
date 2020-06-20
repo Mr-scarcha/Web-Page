@@ -1,18 +1,40 @@
+:root{
+    /** Font-size **/
+    --font-h1: 3.125rem;
+    --font-h2: ;
+    --font-h3: 1.25rem;
+    /** Font-color **/
+    --font-c1: #5f6caf;
+    --font-c3: #2e383f;
+    /** Background color **/
+    --color-body: #edf7fa;
+    --color-header: #f1dc7c;
+    --color: #ff8364;
+}
 @media only screen and (max-width: 767px) {
     *{
         margin: 0px;
         padding: 0px;
     }
-    body{
-        min-height: 100vh;
-        margin: 0px;
-        padding: 0px;
-        background-color: #dee1ec;
+    .sm-body{
+        background-color: var(--color-body);
     }
-    header{
-        width: 60px;
+    .sm-h1{
+        font-size: var(--font-h1);
+        color: var(--font-c1);
+    }
+    .sm-h3{
+        font-size: var(--font-h3);
+        color: var(--font-c3);
+    }
+    .sm-header{
+        width: 50px;
         height: 100%;
-        background-color: #f1dc7c;
+        background-color: var(--color-header);
+    }
+    .iconmed{
+        width: 30px;
+        height: 30px;
     }
     h1{
         width: 100%;
