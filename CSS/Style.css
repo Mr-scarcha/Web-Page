@@ -88,7 +88,8 @@ textarea{
     width: 30%;
     height: 8%;
     background-color: #6a5d4d;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000000;
+    margin: 10px 70%;
 }
 .h2-left{
     text-align: left;
@@ -120,9 +121,14 @@ textarea{
     align-self: center;
     margin-top: 10px;
 }
-.twitter, .instagram, .spotify, .email{
-    width: 90px;
-    height: 90px;   
+.iconmed{
+    width: 35px;
+    height: 35px;
+}
+.iconmedc{
+    width: 70px;
+    height: 70px;  
+    margin: 10px 4px; 
 }
 .WID{
     width: 70%;
