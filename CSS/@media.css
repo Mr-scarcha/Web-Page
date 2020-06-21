@@ -1,8 +1,8 @@
 :root{
     /** Font-size **/
     --font-h1: 3.125rem;
-    --font-h2: ;
     --font-h3: 1.25rem;
+    --font-h4: 1.375rem;
     --font-n: 1rem;
     /** Font-color **/
     --font-c1: #10316b ;
@@ -13,6 +13,7 @@
     /** Background color **/
     --color-body: #edf7fa;
     --color-header: #f1dc7c;
+    --color-progress: #f2a365;
 }
 @media only screen and (max-width: 767px) {
     *{
@@ -22,6 +23,37 @@
     body{
         min-height: 100vh;
         background-color: var(--color-body);
+    }
+    form{
+        width: 90%;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    label{
+        display: block;
+        color: var(--font-c4);
+    }
+    p{
+        color: var(--font-c3);
+    }
+    progress{
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--color-progress);
+    }
+    .h-nav{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        min-height: 100vh;
+        background-color: var(--color-header);
+        position: fixed;
     }
     .sm-h1{
         font-size: var(--font-h1);
@@ -34,13 +66,17 @@
         font-size: var(--font-h3);
         color: var(--font-c3);
     }
+    .sm-h4{
+        font-size: var(--font-h4);
+        color: var(--font-c5);
+    }
     .sm-header{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 50px;
-        min-height: 100%;
+        min-height: 100vh;
         background-color: var(--color-header);
     }
     .iconmed{
@@ -62,6 +98,36 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    /** cv **/
+    .content{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr;
+    }
+    .nav-two{
+        display: none;
+    }
+    .information{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .none{
+        display: none;
+    }
+    .profile{
+        width: 150px;
+        height: 170px;
+        margin-bottom: 30px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
     }
     /** Contact **/
     .contact{
@@ -91,16 +157,7 @@
         display: flex;
         justify-content: center;
     }
-    form{
-        width: 90%;
-    }
-    input, textarea{
-        width: 100%;
-    }
-    label{
-        display: block;
-        color: var(--font-c4);
-    }
+    
 
 
 
@@ -125,32 +182,17 @@
         
     .nav-two{
         display: none;
-    }
-        CV 
+    } **/
+       /** CV 
     .content, .content-2{
     min-height: 100%;   
     display: grid;
     grid-template-columns: 60px 1fr;
     grid-row: 100%;
     }
-    .information{
-        width: 90%;
-        min-height: 100%;
-        margin: 0px;
-        display: flex;
-        justify-items: center;
-    }
-    .profile{
-        width: 150px;
-        height: 170px;
-        margin-bottom: 30px;
-    }
     .about{
         width: 100%;
         margin-bottom: 15px;
-    }
-    .none{
-        display: none;
     }
     .edu-first, .edu-second, .edu-third, .ex-first, .ex-second, .cer-first, .bar-content{
         display: flex;
@@ -164,16 +206,7 @@
     }
     .divider::after{
         display: none;
-    }
-    .left{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    .right{
-        width: 100%;
-        margin: 0px;
-    }
+    } /**
         Portfolio 
     .information-2{
         width: 100%;
@@ -190,35 +223,5 @@
     .left-port{
         width: 100%;
         height: 300px;
-    }
-        Contacto 
-    textarea{
-        height: 70%
-    }
-    .contac-two{
-        grid-row: 1/2;
-        grid-column: 2/3;
-        width: 100%;
-        height: 100%;
-    }
-    .survey{
-        margin-top: 10px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 100%;
-        height: 55%;
-    }
-    .follow{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 40px;
-        width: 100%;
-        height: 45%;
-    }
-    .twitter, .instagram, .spotify, .email{
-        width: 60px;
-        height: 60px; 
-        margin: 10px;  
     }**/
 } 
