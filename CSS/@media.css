@@ -129,15 +129,33 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    /** Contact **/
+    /** portfolio **/
+    .content-2{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr;
+    }
+    .information-2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img-cont{
+        max-width: 100%;
+        height: auto;
+    }
+    /** contact **/
     .contact{
         display: grid;
         grid-template-columns: 50px 1fr;
-        grid-template-rows: 100%;
+        grid-template-rows: 1fr;
         overflow: hidden;
         min-height: 100vh;
     }
     .contac-two{
+        grid-column: 2/3;
+        grid-row: 1/2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -173,40 +191,6 @@
         color: #b14646;
     }
 
-    p{
-        width: 100%;
-    }
-    progress{
-        width: 95%;
-    }
-        
-    .nav-two{
-        display: none;
-    } **/
-       /** CV 
-    .content, .content-2{
-    min-height: 100%;   
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-row: 100%;
-    }
-    .about{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .edu-first, .edu-second, .edu-third, .ex-first, .ex-second, .cer-first, .bar-content{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    .divider{
-        display: none;
-    }
-    .divider::after{
-        display: none;
-    } /**
         Portfolio 
     .information-2{
         width: 100%;

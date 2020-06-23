@@ -9,28 +9,43 @@
     --font-size-ter: 1.562rem;
     --font-size-quater: 1.312rem;
     --font-size-fif: 1rem;
+    /** Color **/
+    --color-bodym: #dae1e7;
+    --color-nav: #6bc5d2;
+    --color-bbutton: #6a5d4d;
+    --color-border: #000000;
+    --color-thumb: #ebdf72;
+    --color-thumbh: #00ffbf;
+    --color-scroll: #ff0037;
+    /** color font **/
+    --font-colorh1: #0f4c81;
+    --font-colorh2: #ee7e42;
+    --font-colorA: #312727;
+    --font-colorAh: brown;
+    --font-colorin: #f5973d;
+    --font-colortt: #da4c4c;
 }
 body{
-    background-color: #dae1e7;
+    background-color: var(--color-bodym);
     line-height: 1.5;
     /** Color para el background del Nav es #79AAD6 **/
 }
 header{
-    background-color: #6bc5d2;
+    background-color: var(--color-nav);
 }
 h1{
     font-family: var(--font-family-prim); 
     font-size: var(--font-size-prim);
     letter-spacing: 5px;
     text-align: center;
-    color: #0f4c81;
+    color: var(--font-colorh1);
 }
 h2{
     font-family: var(--font-family-prim);
     font-size: var(--font-size-sec);
     letter-spacing: 3px;
     text-align: center;
-    color: #ee7e42;
+    color: var(--font-colorh2);
 }
 h3{
     font-family: var(--font-family-sec);
@@ -47,12 +62,12 @@ h4{
 a{
     font-family: var(--font-family-prim);
     font-size: var(--font-size-quater);
-    color: #312727;
+    color: var(--font-colorA);
     text-decoration: none;
     letter-spacing: 0px;
 }
 a:hover{
-    color: brown;
+    color: var(--font-colorAh);
 }
 p{
     font-family: var(--font-family-ter);
@@ -74,21 +89,21 @@ label{
 input{
     border: none;
     font-size: var(--font-size-fif);
-    color: #f5973d;
+    color: var(--font-colorin);
     font-weight: bold;
     margin-top: 2px;
 }
 textarea{
     font-size: var(--font-size-fif);
-    color: #da4c4c;
+    color: var(--font-colortt);
     border: none;
 }
 /** Class **/
 .button{
     width: 30%;
     height: 8%;
-    background-color: #6a5d4d;
-    border: 1px solid #000000;
+    background-color: var(--color-bbutton);
+    border: 1px solid var(--color-border);
     margin: 10px 70%;
 }
 .h2-left{
@@ -112,7 +127,7 @@ textarea{
     justify-content: flex-start;
 }
 .nav-two{
-    background-color: #6bc5d2
+    background-color: var(--color-nav);
 }
 .profile{
     width: 230px;
@@ -122,8 +137,8 @@ textarea{
     margin-top: 10px;
 }
 .iconmed{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 .iconmedc{
     width: 70px;
@@ -137,38 +152,38 @@ textarea{
 .container-1::-webkit-scrollbar{
     width: 7px;
     height: 100%;
-    background-color: rgb(247, 6, 46);
+    background-color: var(--color-scroll);
     border-radius: 10px;
 }
 .container-2::-webkit-scrollbar{
     width: 7px;
     height: 100%;
-    background-color: rgb(247, 6, 46);
+    background-color: var(--color-scroll);
     border-radius: 10px;
 }
 .container-3::-webkit-scrollbar{
     width: 7px;
     height: 100%;
-    background-color: rgb(247, 6, 46);
+    background-color: var(--color-scroll);
     border-radius: 10px;
 }
 .container-4::-webkit-scrollbar{
     width: 7px;
     height: 100%;
-    background-color: rgb(247, 6, 46);
+    background-color: var(--color-scroll);
     border-radius: 10px;
 }
 .container-5::-webkit-scrollbar{
     width: 7px;
     height: 100%;
-    background-color: rgb(247, 6, 46);
+    background-color: var(--color-scroll);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
     height: 60%;
-    background-color: #ebdf72;
+    background-color: var(--color-thumb);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(0, 252, 210);
+    background-color: var(--color-thumbh);
 }
